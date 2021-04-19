@@ -1,5 +1,5 @@
 import * as N from 'fp-ts/number';
-import { find } from './find';
+import { find } from '../find';
 import { isSome, none, some, getEq, Option, isNone } from 'fp-ts/lib/Option';
 
 describe('find함수 테스트 (undefined와 null)', () => {
