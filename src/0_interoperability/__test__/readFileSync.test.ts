@@ -1,4 +1,23 @@
+import * as fs from 'fs';
+import { readFileSync } from '../readFileSync';
+import { Either, isRight, getOrElse, isLeft } from 'fp-ts/lib/Either';
+
 describe('readFileSync함수 테스트 (동기 부수 효과)', () => {
-  it.todo('readFileSync가 정상적으로 값을 가져왔을 경우');
-  it.todo('readFileSync함수 실행 중 예외가 발생했을 경우');
+  jest.spyOn(fs, 'readFileSync').mockImplementation((path) => {
+    if (path === 'success.txt') return 'success';
+    throw new Error(`${path} is not found.`);
+  });
+  let result: Either<Error, string>;
+
+  it('readFileSync가 정상적으로 값을 가져왔을 경우', () => {
+    result = readFileSync('success.txt')();
+    expect(isRight(result)).toBeTruthy();
+    expect(getOrElse(() => 'fail')(result)).toBe('success');
+  });
+
+  it('readFileSync함수 실행 중 예외가 발생했을 경우', () => {
+    result = readFileSync('fail.txt')();
+    expect(isLeft(result)).toBeTruthy();
+    expect(getOrElse(() => 'fail')(result)).toBe('fail');
+  });
 });
