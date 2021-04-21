@@ -5,7 +5,6 @@
 
 > 본 레파지토리는 fp-ts 공식문서의 [Learning Resources](https://gcanti.github.io/fp-ts/learning-resources/)에 있는 Getting Started에서 소개하는 문서들을 번역하며 학습한 레파지토리입니다.
 
-
 <div align="center">
 
 [![codecov](https://codecov.io/gh/alstn2468/getting-started-fp-ts/branch/main/graph/badge.svg?token=U2GY97UZMH)](https://codecov.io/gh/alstn2468/getting-started-fp-ts) ![Github Action](https://github.com/alstn2468/getting-started-fp-ts/actions/workflows/action.yml/badge.svg) ![fp-ts version](https://img.shields.io/github/package-json/dependency-version/alstn2468/getting-started-fp-ts/dev/fp-ts) ![typescript version](https://img.shields.io/github/package-json/dependency-version/alstn2468/getting-started-fp-ts/dev/typescript)<br>
@@ -13,12 +12,11 @@
 
 </div>
 
-
 ## 📘 목차
 
-|                     주제                     |             코드 링크              |
-| :------------------------------------------: | :--------------------------------: |
-| fp-ts를 이용한 비함수형 코드와의 상호 운용성 | [:link:](./src/0_interoperability) |
+|                     주제                     |                코드                |                                포스트                                |
+| :------------------------------------------: | :--------------------------------: | :------------------------------------------------------------------: |
+| fp-ts를 이용한 비함수형 코드와의 상호 운용성 | [:link:](./src/0_interoperability) | [:link:](https://alstn2468.github.io/TypeScript/2021-04-21-fp-ts-0/) |
 
 <div align="center">
 
