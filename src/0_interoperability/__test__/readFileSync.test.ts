@@ -8,13 +8,11 @@ describe('readFileSync함수 테스트 (동기 부수 효과)', () => {
     throw new Error(`${path} is not found.`);
   });
   let result: Either<Error, string>;
-
   it('readFileSync가 정상적으로 값을 가져왔을 경우', () => {
     result = readFileSync('success.txt')();
     expect(isRight(result)).toBeTruthy();
     expect(getOrElse(() => 'fail')(result)).toBe('success');
   });
-
   it('readFileSync함수 실행 중 예외가 발생했을 경우', () => {
     result = readFileSync('fail.txt')();
     expect(isLeft(result)).toBeTruthy();

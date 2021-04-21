@@ -9,6 +9,7 @@ describe('getItem함수 테스트 (동기 부수 효과)', () => {
   });
   let result: Option<string>;
   const E = getEq(S.Eq);
+
   it('getItem함수가 값을 정상적으로 가져온 경우', () => {
     result = getItem('success')();
     expect(isSome(result)).toBeTruthy();

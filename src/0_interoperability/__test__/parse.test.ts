@@ -13,7 +13,6 @@ describe('parse함수 테스트 (예외)', () => {
       b: 2,
     });
   });
-
   it('parse함수 실행 중 예외가 발생했을 경우', () => {
     result = parse(fail);
     expect(isLeft(result)).toBeTruthy();
