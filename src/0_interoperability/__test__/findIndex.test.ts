@@ -1,6 +1,6 @@
 import * as N from 'fp-ts/number';
-import { findIndex } from '../findIndex';
 import { isSome, none, some, getEq, Option, isNone } from 'fp-ts/Option';
+import { findIndex } from '../findIndex';
 
 describe('findIndex함수 테스트 (Sentinels)', () => {
   let array: number[] = [1, 2, 3, 5];

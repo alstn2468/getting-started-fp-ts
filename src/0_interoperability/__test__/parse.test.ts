@@ -1,5 +1,5 @@
-import { parse } from '../parse';
 import { isLeft, isRight, getOrElse } from 'fp-ts/Either';
+import { parse } from '../parse';
 
 describe('parse함수 테스트 (예외)', () => {
   const success = '{"a": 1, "b": 2}';

@@ -1,6 +1,6 @@
 import * as fs from 'fs';
-import { readFileSync } from '../readFileSync';
 import { Either, isRight, getOrElse, isLeft } from 'fp-ts/lib/Either';
+import { readFileSync } from '../readFileSync';
 
 describe('readFileSync함수 테스트 (동기 부수 효과)', () => {
   jest.spyOn(fs, 'readFileSync').mockImplementation((path) => {

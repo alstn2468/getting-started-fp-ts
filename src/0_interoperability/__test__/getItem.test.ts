@@ -1,6 +1,6 @@
 import * as S from 'fp-ts/string';
-import { getItem } from '../getItem';
 import { isSome, isNone, none, some, getEq, Option } from 'fp-ts/Option';
+import { getItem } from '../getItem';
 
 describe('getItem함수 테스트 (동기 부수 효과)', () => {
   window.localStorage.__proto__.getItem = jest.fn((key) => {

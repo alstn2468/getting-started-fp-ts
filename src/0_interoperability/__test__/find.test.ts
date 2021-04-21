@@ -1,6 +1,6 @@
 import * as N from 'fp-ts/number';
-import { find } from '../find';
 import { isSome, none, some, getEq, Option, isNone } from 'fp-ts/Option';
+import { find } from '../find';
 
 describe('find함수 테스트 (undefined와 null)', () => {
   let array: number[] = [1, 2, 3, 5];
