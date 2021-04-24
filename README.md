@@ -17,7 +17,8 @@
 |                     주제                     |                코드                |                                포스트                                |
 | :------------------------------------------: | :--------------------------------: | :------------------------------------------------------------------: |
 | fp-ts를 이용한 비함수형 코드와의 상호 운용성 | [:link:](./src/0_interoperability) | [:link:](https://alstn2468.github.io/TypeScript/2021-04-21-fp-ts-0/) |
-|              fp-ts 시작하기: Eq              |        [:link:](./src/1_eq)        |                              [:link:]()                              |
+|              fp-ts 시작하기: Eq              |        [:link:](./src/1_eq)        | [:link:](https://alstn2468.github.io/TypeScript/2021-04-21-fp-ts-1/) |
+|             fp-ts 시작하기: Ord              |       [:link:](./src/2_ord)        |                              [:link:]()                              |
 
 <div align="center">
 
