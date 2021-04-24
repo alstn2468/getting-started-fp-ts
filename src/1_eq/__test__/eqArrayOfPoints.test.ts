@@ -1,7 +1,7 @@
 import { eqArrayOfPoints } from '../eqArrayOfPoints';
 
-describe('Eq 인터페이스를 구현한 eqArrayOfPoints 객체 테스트', () => {
-  it('eqArrayOfPoints 객체 equals 메서드 테스트', () => {
+describe('Eq 인터페이스를 구현한 eqArrayOfPoints 인스턴스 테스트', () => {
+  it('eqArrayOfPoints 인스턴스 equals 함수 테스트', () => {
     expect(
       eqArrayOfPoints.equals(
         [

@@ -3,6 +3,7 @@ import { eqNumber } from '../eqNumber';
 import { eqPoint } from '../eqPoint';
 import { eqVector } from '../eqVector';
 import { eqArrayOfPoints } from '../eqArrayOfPoints';
+import { eqUser } from '../eqUser';
 
 describe('elem 함수 테스트', () => {
   it('eqNumber를 이용한 elem 함수 테스트 (요소가 있는 경우)', () => {
@@ -85,6 +86,22 @@ describe('elem 함수 테스트', () => {
           ],
         ],
       ),
+    ).toBeFalsy();
+  });
+  it('eqUser를 이용한 elem 함수 테스트 (요소가 있는 경우)', () => {
+    expect(
+      elem(eqUser)({ userId: 1, name: 'Minsu' }, [
+        { userId: 1, name: 'Minsu Kim' },
+        { userId: 2, name: 'Stevy' },
+      ]),
+    ).toBeTruthy();
+  });
+  it('eqUser를 이용한 elem 함수 테스트 (요소가 없는 경우)', () => {
+    expect(
+      elem(eqUser)({ userId: 1, name: 'Minsu' }, [
+        { userId: 2, name: 'Minsu' },
+        { userId: 3, name: 'Stevy' },
+      ]),
     ).toBeFalsy();
   });
 });
