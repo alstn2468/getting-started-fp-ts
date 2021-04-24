@@ -2,7 +2,7 @@ import { struct } from 'fp-ts/lib/Eq';
 import { Eq } from './eq';
 import { eqNumber } from './eqNumber';
 
-type Point = {
+export type Point = {
   x: number;
   y: number;
 };
