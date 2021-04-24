@@ -2,6 +2,7 @@ import { elem } from '../elem';
 import { eqNumber } from '../eqNumber';
 import { eqPoint } from '../eqPoint';
 import { eqVector } from '../eqVector';
+import { eqArrayOfPoints } from '../eqArrayOfPoints';
 
 describe('elem 함수 테스트', () => {
   it('eqNumber를 이용한 elem 함수 테스트 (요소가 있는 경우)', () => {
@@ -44,6 +45,46 @@ describe('elem 함수 테스트', () => {
         { from: { x: 2, y: 3 }, to: { x: 3, y: 5 } },
         { from: { x: 3, y: 4 }, to: { x: 3, y: 5 } },
       ]),
+    ).toBeFalsy();
+  });
+  it('eqArrayOfPoints를 이용한 elem 함수 테스트 (요소가 있는 경우)', () => {
+    expect(
+      elem(eqArrayOfPoints)(
+        [
+          { x: 1, y: 2 },
+          { x: 2, y: 3 },
+        ],
+        [
+          [
+            { x: 1, y: 2 },
+            { x: 2, y: 3 },
+          ],
+          [
+            { x: 2, y: 3 },
+            { x: 3, y: 4 },
+          ],
+        ],
+      ),
+    ).toBeTruthy();
+  });
+  it('eqArrayOfPoints를 이용한 elem 함수 테스트 (요소가 없는 경우)', () => {
+    expect(
+      elem(eqArrayOfPoints)(
+        [
+          { x: 0, y: 1 },
+          { x: 1, y: 2 },
+        ],
+        [
+          [
+            { x: 1, y: 2 },
+            { x: 2, y: 3 },
+          ],
+          [
+            { x: 2, y: 3 },
+            { x: 3, y: 4 },
+          ],
+        ],
+      ),
     ).toBeFalsy();
   });
 });
