@@ -14,11 +14,11 @@
 
 ## 📘 목차
 
-|                     주제                     |                코드                |                                포스트                                |
-| :------------------------------------------: | :--------------------------------: | :------------------------------------------------------------------: |
-| fp-ts를 이용한 비함수형 코드와의 상호 운용성 | [:link:](./src/0_interoperability) | [:link:](https://alstn2468.github.io/TypeScript/2021-04-21-fp-ts-0/) |
-|              fp-ts 시작하기: Eq              |        [:link:](./src/1_eq)        | [:link:](https://alstn2468.github.io/TypeScript/2021-04-21-fp-ts-1/) |
-|             fp-ts 시작하기: Ord              |       [:link:](./src/2_ord)        |                              [:link:]()                              |
+|                     주제                     |                                                               코드                                                                |                                                                                                                         포스트                                                                                                                         |
+| :------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| fp-ts를 이용한 비함수형 코드와의 상호 운용성 | [![Interoperability](https://img.shields.io/badge/CODE%20LINK-white?style=flat-square&logo=typescript)](./src/0_interoperability) | [![Interoperability](https://img.shields.io/badge/BLOG%20POST%20LINK-663399?style=flat-square&logo=gatsby&logoColor=whitelink=https://alstn2468.github.io/TypeScript/2021-04-21-fp-ts-0/)](https://alstn2468.github.io/TypeScript/2021-04-21-fp-ts-0/) |
+|              fp-ts 시작하기: Eq              |               [![Eq](https://img.shields.io/badge/CODE%20LINK-white?style=flat-square&logo=typescript)](./src/1_eq)               |        [![Eq](https://img.shields.io/badge/BLOG%20POST%20LINK-663399?style=flat-square&logo=gatsby&logoColor=whitelink=https://alstn2468.github.io/TypeScript/2021-04-21-fp-ts-0/)](https://alstn2468.github.io/TypeScript/2021-04-24-fp-ts-1/)        |
+|             fp-ts 시작하기: Ord              |              [![Ord](https://img.shields.io/badge/CODE%20LINK-white?style=flat-square&logo=typescript)](./src/2_ord)              |                                    [![Ord](https://img.shields.io/badge/BLOG%20POST%20LINK-663399?style=flat-square&logo=gatsby&logoColor=whitelink=https://alstn2468.github.io/TypeScript/2021-04-21-fp-ts-0/)]()                                     |
 
 <div align="center">
 
