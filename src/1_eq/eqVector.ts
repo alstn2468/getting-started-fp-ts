@@ -1,6 +1,6 @@
+import type { Eq } from './eq';
 import type { Point } from './eqPoint';
 import { struct } from 'fp-ts/lib/Eq';
-import { Eq } from './eq';
 import { eqPoint } from './eqPoint';
 
 type Vector = {

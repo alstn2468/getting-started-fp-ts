@@ -1,5 +1,5 @@
+import type { Eq } from './eq';
 import { struct } from 'fp-ts/lib/Eq';
-import { Eq } from './eq';
 import { eqNumber } from './eqNumber';
 
 export type Point = {
