@@ -6,5 +6,5 @@ type User = {
   name: string;
 };
 
-/** 두 User는`userId` 필드가 같으면 동일합니다. */
+/** 두 User는`userId` 필드가 같으면 같습니다. */
 export const eqUser = contramap((user: User) => user.userId)(eqNumber);
