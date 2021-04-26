@@ -1,6 +1,6 @@
 import type { Semigroup } from './semigroup';
 
-/** 곱셈에서의 숫자 `Semigroup` */
+/** number 타입의 곱셈 `Semigroup` */
 export const semigroupProduct: Semigroup<number> = {
   concat: (x, y) => x * y,
 };

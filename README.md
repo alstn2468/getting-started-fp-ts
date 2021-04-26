@@ -20,6 +20,7 @@
 |              fp-ts 시작하기: Eq              |               [![Eq](https://img.shields.io/badge/CODE%20LINK-white?style=flat-square&logo=typescript)](./src/1_eq)               |        [![Eq](https://img.shields.io/badge/BLOG%20POST%20LINK-663399?style=flat-square&logo=gatsby&logoColor=white)](https://alstn2468.github.io/TypeScript/2021-04-24-fp-ts-1/)        |
 |             fp-ts 시작하기: Ord              |              [![Ord](https://img.shields.io/badge/CODE%20LINK-white?style=flat-square&logo=typescript)](./src/2_ord)              |       [![Ord](https://img.shields.io/badge/BLOG%20POST%20LINK-663399?style=flat-square&logo=gatsby&logoColor=white)](https://alstn2468.github.io/TypeScript/2021-04-25-fp-ts-2/)        |
 |          fp-ts 시작하기: Semigroup           |        [![Semigroup](https://img.shields.io/badge/CODE%20LINK-white?style=flat-square&logo=typescript)](./src/3_semigroup)        |    [![Semigroup](https://img.shields.io/badge/BLOG%20POST%20LINK-663399?style=flat-square&logo=gatsby&logoColor=white)](https://alstn2468.github.io/TypeScript/2021-04-25-fp-ts-3/)     |
+|            fp-ts 시작하기: Monoid            |           [![Monoid](https://img.shields.io/badge/CODE%20LINK-white?style=flat-square&logo=typescript)](./src/4_monoid)           |      [![Monoid](https://img.shields.io/badge/BLOG%20POST%20LINK-663399?style=flat-square&logo=gatsby&logoColor=white)](https://alstn2468.github.io/TypeScript/2021-04-26-fp-ts-4/)      |
 
 <div align="center">
 
