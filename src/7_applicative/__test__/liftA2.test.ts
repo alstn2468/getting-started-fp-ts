@@ -5,7 +5,7 @@ import * as T from 'fp-ts/lib/Task';
 
 describe('인자가 2개인 들어 올리는 기능을 하는 liftA2 함수 테스트', () => {
   it('F가 Option 타입인 경우 liftA2 함수 테스트', () => {
-    const g = (b: string) => (c: number) => String(b) + String(c);
+    const g = (b: string) => (c: number) => b + String(c);
     const fb = O.some('success');
     const fc = O.some(1);
     const result = liftA2(O.Apply)(g)(fb)(fc);
