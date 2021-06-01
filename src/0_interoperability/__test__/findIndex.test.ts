@@ -1,5 +1,6 @@
-import * as N from 'fp-ts/number';
-import { isSome, none, some, getEq, Option, isNone } from 'fp-ts/Option';
+import type { Option } from 'fp-ts/lib/Option';
+import * as N from 'fp-ts/lib/number';
+import { isSome, none, some, getEq, isNone } from 'fp-ts/lib/Option';
 import { findIndex } from '../findIndex';
 
 describe('findIndex함수 테스트 (Sentinels)', () => {

@@ -1,5 +1,6 @@
+import type { Either } from 'fp-ts/lib/Either';
 import * as fs from 'fs';
-import { Either, isRight, getOrElse, isLeft } from 'fp-ts/lib/Either';
+import { isRight, getOrElse, isLeft } from 'fp-ts/lib/Either';
 import { readFileSync } from '../readFileSync';
 
 describe('readFileSync함수 테스트 (동기 부수 효과)', () => {

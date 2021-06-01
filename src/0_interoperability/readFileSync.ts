@@ -1,5 +1,6 @@
 import * as fs from 'fs';
-import { IOEither, tryCatch } from 'fp-ts/IOEither';
+import type { IOEither } from 'fp-ts/lib/IOEither';
+import { tryCatch } from 'fp-ts/lib/IOEither';
 
 export function readFileSync(path: string): IOEither<Error, string> {
   return tryCatch(

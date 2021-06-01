@@ -1,4 +1,4 @@
-import { Functor1 } from 'fp-ts/lib/Functor';
+import type { Functor1 } from 'fp-ts/lib/Functor';
 
 const URI = 'Response';
 

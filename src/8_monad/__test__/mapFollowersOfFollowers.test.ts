@@ -1,5 +1,5 @@
+import type { User } from '../user';
 import { mapFollowersOfFollowers } from '../mapFollowersOfFollowers';
-import { User } from '../user';
 
 describe('Array의 map으로 구현된 followers의 followers를 반환하는 mapFollowersOfFollowers 함수 테스트', () => {
   const userD: User = { followers: [] };

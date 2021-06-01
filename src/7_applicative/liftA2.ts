@@ -1,5 +1,5 @@
-import { Apply1 } from 'fp-ts/lib/Apply';
-import { Kind, URIS } from 'fp-ts/lib/HKT';
+import type { Apply1 } from 'fp-ts/lib/Apply';
+import type { Kind, URIS } from 'fp-ts/lib/HKT';
 
 type Curried2<B, C, D> = (b: B) => (c: C) => D;
 

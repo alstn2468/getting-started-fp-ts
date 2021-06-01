@@ -1,4 +1,5 @@
-import { Option, none, some } from 'fp-ts/Option';
+import type { Option } from 'fp-ts/lib/Option';
+import { none, some } from 'fp-ts/lib/Option';
 
 export function findIndex<A>(
   as: Array<A>,

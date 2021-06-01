@@ -1,5 +1,5 @@
+import type { User } from '../user';
 import { getFollowers } from '../getFollowers';
-import { User } from '../user';
 
 describe('User 인스턴스의 followers 값을 반환하는 getFollowers 함수 테스트', () => {
   const userA: User = { followers: [] };

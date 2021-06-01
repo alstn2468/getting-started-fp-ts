@@ -1,4 +1,4 @@
-import { Task } from 'fp-ts/lib/Task';
+import type { Task } from 'fp-ts/lib/Task';
 
 export const applicativeTask = {
   map: <A, B>(fa: Task<A>, f: (a: A) => B): Task<B> => () => fa().then(f),

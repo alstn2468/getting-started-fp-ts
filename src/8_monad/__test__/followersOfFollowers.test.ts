@@ -1,5 +1,5 @@
+import type { User } from '../user';
 import { followersOfFollowers } from '../followersOfFollowers';
-import { User } from '../user';
 
 describe('flatten을 이용한 followers의 followers를 반환하는 followersOfFollowers 함수 테스트', () => {
   const userD: User = { followers: [] };

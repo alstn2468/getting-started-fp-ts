@@ -1,4 +1,4 @@
-import { Eq } from 'fp-ts/lib/Eq';
+import type { Eq } from 'fp-ts/lib/Eq';
 
 type Ordering = -1 | 0 | 1;
 

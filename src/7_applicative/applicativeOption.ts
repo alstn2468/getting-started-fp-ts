@@ -1,4 +1,5 @@
-import { Option, some, none, isNone } from 'fp-ts/lib/Option';
+import type { Option } from 'fp-ts/lib/Option';
+import { some, none, isNone } from 'fp-ts/lib/Option';
 
 export const applicativeOption = {
   map: <A, B>(fa: Option<A>, f: (a: A) => B): Option<B> =>

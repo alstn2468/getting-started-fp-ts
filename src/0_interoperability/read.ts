@@ -1,5 +1,5 @@
 import { createInterface } from 'readline';
-import { Task } from 'fp-ts/Task';
+import type { Task } from 'fp-ts/lib/Task';
 
 export const read: Task<string> = () =>
   new Promise<string>((resolve) => {

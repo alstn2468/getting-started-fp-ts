@@ -1,4 +1,5 @@
-import { Semigroup, struct, max, min } from 'fp-ts/lib/Semigroup';
+import type { Semigroup } from 'fp-ts/lib/Semigroup';
+import { struct, max, min } from 'fp-ts/lib/Semigroup';
 import { getMonoid } from 'fp-ts/lib/Array';
 import { Ord } from 'fp-ts/lib/number';
 import { contramap } from 'fp-ts/lib/Ord';

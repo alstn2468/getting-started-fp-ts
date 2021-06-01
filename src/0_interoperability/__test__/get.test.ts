@@ -1,4 +1,5 @@
-import { Either, getOrElse, isLeft, isRight } from 'fp-ts/lib/Either';
+import type { Either } from 'fp-ts/lib/Either';
+import { getOrElse, isLeft, isRight } from 'fp-ts/lib/Either';
 import { get } from '../get';
 
 describe('get함수 테스트 (비동기 부수 효과)', () => {

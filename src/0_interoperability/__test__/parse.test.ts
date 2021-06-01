@@ -1,4 +1,4 @@
-import { isLeft, isRight, getOrElse } from 'fp-ts/Either';
+import { isLeft, isRight, getOrElse } from 'fp-ts/lib/Either';
 import { parse } from '../parse';
 
 describe('parse함수 테스트 (예외)', () => {

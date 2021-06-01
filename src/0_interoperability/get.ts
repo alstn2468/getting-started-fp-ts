@@ -1,4 +1,5 @@
-import { TaskEither, tryCatch } from 'fp-ts/TaskEither';
+import type { TaskEither } from 'fp-ts/lib/TaskEither';
+import { tryCatch } from 'fp-ts/lib/TaskEither';
 
 export function get(url: string): TaskEither<Error, string> {
   return tryCatch(

@@ -1,5 +1,6 @@
-import * as S from 'fp-ts/string';
-import { isSome, isNone, none, some, getEq, Option } from 'fp-ts/Option';
+import type { Option } from 'fp-ts/lib/Option';
+import * as S from 'fp-ts/lib/string';
+import { isSome, isNone, none, some, getEq } from 'fp-ts/lib/Option';
 import { getItem } from '../getItem';
 
 describe('getItem함수 테스트 (동기 부수 효과)', () => {
