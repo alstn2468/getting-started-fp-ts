@@ -29,7 +29,7 @@
     "build:watch": "tsc -w -p tsconfig.release.json",
     "lint": "eslint . --ext .ts,.tsx",
     "pretty": "prettier --write \"./**/*.{ts,tsx,js,jsx,json}\"",
-    "test": "TZ=KST jest --coverage",
+    "test": "TZ=UTC jest --coverage",
     "test:watch": "jest --watch"
   },
   "license": "MIT"
