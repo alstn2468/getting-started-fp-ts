@@ -8,16 +8,16 @@ describe('Reader를 사용하는 의존성이 있는 f, g, h 함수 테스트', 
       false: 'false',
     },
   };
-  it('boolean와 deps를 받아 문자열을 반환하는 f 함수 테스트', () => {
+  it('boolean을 받아 deps의존성을 받는아 문자열을 반환하는 함수를 반환하는 f 함수 테스트', () => {
     expect(f(true)(deps)).toBe('true');
     expect(f(false)(deps)).toBe('false');
   });
-  it('number와 deps를 받아 문자열을 반환하는 g 함수 테스트', () => {
+  it('number를 받아 deps의존성을 받아 문자열을 반환하는 함수를 반환하는 g 함수 테스트', () => {
     expect(g(3)(deps)).toBe('true');
     expect(g(2)(deps)).toBe('false');
     expect(g(1)(deps)).toBe('false');
   });
-  it('string과 deps를 받아 문자열을 반환하는 h 함수 테스트', () => {
+  it('string을 받아 deps의존성을 받아 문자열을 반환하는 함수를 반환하는 h 함수 테스트', () => {
     expect(h('aaa')(deps)).toBe('true');
     expect(h('aa')(deps)).toBe('true');
     expect(h('a')(deps)).toBe('false');

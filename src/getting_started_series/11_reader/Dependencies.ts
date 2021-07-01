@@ -4,3 +4,7 @@ export interface Dependencies {
     false: string;
   };
 }
+
+export interface Dependencies2 extends Dependencies {
+  lowerBound: number;
+}
