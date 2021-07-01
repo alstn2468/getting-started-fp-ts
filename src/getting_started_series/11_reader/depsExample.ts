@@ -1,9 +1,4 @@
-interface Dependencies {
-  i18n: {
-    true: string;
-    false: string;
-  };
-}
+import type { Dependencies } from './Dependencies';
 
 export const f = (b: boolean, deps: Dependencies): string =>
   b ? deps.i18n.true : deps.i18n.false;
