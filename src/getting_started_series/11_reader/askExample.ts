@@ -1,6 +1,7 @@
 import type { Dependencies2 } from './Dependencies';
+import type { Reader } from 'fp-ts/lib/Reader';
 import { pipe } from 'fp-ts/lib/function';
-import { ask, chain, Reader } from 'fp-ts/lib/Reader';
+import { ask, chain } from 'fp-ts/lib/Reader';
 
 import { f } from './readerDepsExample';
 
