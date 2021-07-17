@@ -1,6 +1,7 @@
-import { time } from '../time';
+import { of } from 'fp-ts/lib/IO';
+import { withLogging } from '../withLogging';
 
-describe('IO<A>를 받아 실행시간을 측정하는 time 함수 테스트', () => {
+describe('time 함수를 조합한 withLogging 함수 테스트', () => {
   const spy = jest.spyOn(console, 'log').mockImplementation();
   const baseTime = new Date().getTime();
   beforeEach(() => {
@@ -13,13 +14,13 @@ describe('IO<A>를 받아 실행시간을 측정하는 time 함수 테스트', (
     spy.mockClear();
   });
   it('타입 매개변수 A가 number인 경우 테스트', () => {
-    expect(time(() => 1)()).toBe(1);
+    expect(withLogging(of(1))()).toBe(1);
     expect(console.log).toBeCalledTimes(1);
-    expect(console.log).toHaveBeenCalledWith(`Elapsed: 10`);
+    expect(console.log).toHaveBeenCalledWith(`Result: 1, Elapsed: 10`);
   });
   it('타입 매개변수 A가 string인 경우 테스트', () => {
-    expect(time(() => 'test')()).toBe('test');
+    expect(withLogging(of('test'))()).toBe('test');
     expect(console.log).toBeCalledTimes(1);
-    expect(console.log).toHaveBeenCalledWith(`Elapsed: 10`);
+    expect(console.log).toHaveBeenCalledWith(`Result: test, Elapsed: 10`);
   });
 });

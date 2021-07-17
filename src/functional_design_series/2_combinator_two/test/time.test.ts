@@ -1,3 +1,4 @@
+import { of } from 'fp-ts/lib/IO';
 import { time } from '../time';
 
 describe('IO<A>를 받아 실행시간을 측정하는 유연하게 개선한 time 함수 테스트', () => {
@@ -10,11 +11,10 @@ describe('IO<A>를 받아 실행시간을 측정하는 유연하게 개선한 ti
       };
     });
   });
-  new Date().getTime();
   it('타입 매개변수 A가 number인 경우 테스트', () => {
-    expect(time(() => 1)()).toMatchObject([1, 10]);
+    expect(time(of(1))()).toMatchObject([1, 10]);
   });
   it('타입 매개변수 A가 string인 경우 테스트', () => {
-    expect(time(() => 'test')()).toMatchObject(['test', 10]);
+    expect(time(of('test'))()).toMatchObject(['test', 10]);
   });
 });
